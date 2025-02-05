@@ -3,7 +3,7 @@ require_relative 'class'
 class Classes
 
   ARTIFICER = Class.new('Artificer',
-    [:defender, :healer, :librarian, :support, :utility_caster])
+    [:defender, :healer, :scholar, :support, :utility_caster])
   BARBARIAN = Class.new('Barbarian',
     [:defender, :striker])
   BARD = Class.new('Bard',
@@ -27,7 +27,7 @@ class Classes
   WARLOCK = Class.new('Warlock',
     [:blaster, :controller, :face, :striker])
   WIZARD = Class.new('Wizard',
-    [:blaster, :controller, :librarian, :striker, :support, :utility_caster])
+    [:blaster, :controller, :scholar, :striker, :support, :utility_caster])
 
   def self.all
     [

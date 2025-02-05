@@ -8,7 +8,7 @@ class Class
       :defender,
       :face,
       :healer,
-      :librarian,
+      :scholar,
       :scout,
       :striker,
       :support,
