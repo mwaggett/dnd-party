@@ -1,0 +1,6 @@
+This project is a work in progress.
+
+TO DO:
+* clean up unused files/code
+* pass party classes via command line, rather than hard-coding them
+* improve ux
