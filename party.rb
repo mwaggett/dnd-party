@@ -4,16 +4,18 @@ require_relative 'classes'
 class Party
   attr_accessor :members
 
-  def initialize
+  def initialize(exclude_scholar = false)
     @members = []
-    @roles = Class.all_roles.map { |role|
+    @roles = Class.all_roles(exclude_scholar).map { |role|
       [role, 0]
     }.to_h
   end
 
   def fulfill_roles(member)
     member.roles.each { |role|
-      @roles[role] += 1
+      if @roles[role]
+        @roles[role] += 1
+      end
     }
   end
 
